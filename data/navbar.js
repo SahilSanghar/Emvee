@@ -1,23 +1,5 @@
 export const menuItems = [
     {
-        title: "Home",
-        links: [
-            { href: "/parking", text: "Address" },
-            { href: "/fan", text: "Number 1" },
-            { href: "/pharmaceutical", text: "Number 2" },
-            { href: "/Hvac", text: "Email Address" },
-        ],
-    },
-    {
-        title: "About Us",
-        links: [
-            { href: "/parking", text: "Address" },
-            { href: "/fan", text: "Number 1" },
-            { href: "/pharmaceutical", text: "Number 2" },
-            { href: "/Hvac", text: "Email Address" },
-        ],
-    },
-    {
         title: "Business",
         links: [
             { href: "/parking", text: "Parking" },

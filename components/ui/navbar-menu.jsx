@@ -21,7 +21,7 @@ export const MenuItem = ({ setActive, active, item, children }) => {
     >
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer pt-2 text-black hover:opacity-[0.9] dark:text-white"
+        className="cursor-pointer hover:text-black opacity-[0.9] dark:text-white"
       >
         {item}
       </motion.p>
