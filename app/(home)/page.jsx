@@ -16,7 +16,7 @@ return (
         <OurJourney />
         <Business />
         {/* <Events /> */}
-        {/* <Footer /> */}
+        <Footer />
     </>
 )
 }
