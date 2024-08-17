@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
-import { cn } from "@/lib/utils";
+import { cn } from "/lib/utils";
 import Image from "next/image";
-import Logo from "@/public/icon1.png";
+import Logo from "/public/icon1.png";
 import { menuItems, buttonData } from "../data/navbar";
 import { FaBars, FaTimes } from "react-icons/fa";
 

@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Introduction = () => {
 return (
-    <div className='overflow-hidden mt-5'>
+    <div className='overflow-hidden mt-28'>
         <div className="flex">
             <p className='text-orange-500 font-extralight px-10'>______________________________</p>
             <p className='py-3.5 text-3xl'>

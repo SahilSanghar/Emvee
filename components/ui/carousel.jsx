@@ -3,9 +3,9 @@ import * as React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import useAutoplay from '@/hooks/useAutoplay';
+import { cn } from "/lib/utils";
+import { Button } from "/components/ui/button";
+import useAutoplay from '/hooks/useAutoplay';
 
 const CarouselContext = React.createContext(null);
 

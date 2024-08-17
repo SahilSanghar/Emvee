@@ -1,5 +1,5 @@
-import Footer from '@/components/Footer'
-import { MainNavbar } from '@/components/Navbar'
+import Footer from '../../components/Footer'
+import { MainNavbar } from '../../components/Navbar'
 import React from 'react'
 
 export const metadata = {
@@ -12,11 +12,13 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
 return (
-    <main>
+    <div className="flex flex-col min-h-screen">
         <MainNavbar />
-        {children}
-        <Footer />
-    </main>
+        <main className="flex-grow">
+            {children}
+        </main>
+        {/* <Footer /> */}
+    </div>
 )
 }
 

@@ -1,7 +1,8 @@
 import React from 'react'
-import Hero from '@/components/Parking/Hero'
+import Hero from '/components/Parking/Hero'
 import Introduction from './Introduction'
 import GeneralParts from './GereralParts'
+import Specification from './Specification'
 
 const Parking = () => {
 return (
@@ -9,6 +10,7 @@ return (
         <Hero />
         <Introduction />
         <GeneralParts />
+        <Specification />
     </>
 )
 }
