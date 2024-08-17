@@ -1,11 +1,11 @@
 export const businessData = [
     {
-        title: "Parking manufaturing",
+        title: "Mechanical Car Parking",
         backgroundImage: "/parkingCard.jpg",
         route: "parking"
     },
     {
-        title: "Fan manufaturing",
+        title: "Mechanical Ventilation Fan",
         backgroundImage: "/fanCard.jpeg",
         route: "fan"
     },

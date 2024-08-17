@@ -1,26 +1,22 @@
 export const milestones = [
     {
         year: "2010",
-        description: "Founded the company and started operations.",
+        description: "Founded the company.",
     },
     {
         year: "2012",
-        description: "Launched our first product.",
+        description: "SMC starting year.",
     },
     {
         year: "2015",
-        description: "Expanded to new markets.",
+        description: "Surat branch opening.",
     },
     {
         year: "2018",
-        description: "Reached 1 million users.",
+        description: "Manufacturing plant opening.",
     },
     {
         year: "2020",
-        description: "Achieved significant industry recognition.",
-    },
-    {
-        year: "2023",
-        description: "Continuing to innovate and grow.",
+        description: "Machine sales opening.",
     },
 ];

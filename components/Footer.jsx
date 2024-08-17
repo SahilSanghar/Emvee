@@ -53,7 +53,7 @@ const Footer = () => {
 
 return (
     <div className=''>
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 max-sm:px-[80px] sm:px-[120px] lg:px-[200px] py-14 h-auto lg:h-[100vh] xl:h-[70vh] bg-[#212529] text-white">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-sm:px-[80px] sm:px-[120px] lg:px-[200px] py-14 h-auto lg:h-[100vh] xl:h-[70vh] bg-[#212529] text-white">
         <div className='py-5'>
             <Image src='/icon.png' alt='logo' width={80} height={50} />
             <p className='py-5'>Established in 2011, The Emvee Engineer envisions to create an empire that spans across various industries and meet the impeccable quality standards...</p>
@@ -105,24 +105,6 @@ return (
         ))}
         </ul>
     </div>
-    <div className='sm:px-[120px] md:px-0 lg:px-[30px]'>
-        <ul>
-        <span className='text-2xl font-semibold'>Other Links</span>
-        <hr className='w-14 mt-1 border-2 border-[rgb(0,112,243)] rounded-3xl' />
-        {otherLinks.map((link, index) => (
-            <li key={index} className='flex items-center text-lg font-light mt-2 py-1 cursor-pointer'>
-            <FaChevronRight size={20} className='text-white mr-2' />
-            <span 
-                className="quick-link" 
-                onMouseEnter={handleMouseEnter} 
-                onMouseLeave={handleMouseLeave}
-            >
-                {link.text}
-            </span>
-            </li>
-        ))}
-        </ul>
-    </div>
     <div className='sm:px-[20px]'>
         <ul className='w-[320px]'>
         <span className='text-2xl font-semibold'>Contact Details</span>
@@ -130,7 +112,7 @@ return (
         {contactDetails.map((contact, index) => (
             <li key={index} className='text-lg w-[320px] font-light py-1'>
                 <p className='flex items-center max-sm:w-[250px]'>
-                    <contact.icon className='w-[40px] h-[40px] rounded-full border-2 cursor-pointer p-2 mr-2' />
+                    {/* <contact.icon className='w-[40px] h-[40px] rounded-full border-2 cursor-pointer p-2 mr-2' /> */}
                     {contact.text}
                 </p>
             </li>

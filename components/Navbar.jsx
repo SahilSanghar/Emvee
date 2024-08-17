@@ -30,9 +30,9 @@ function Navbar({ className }) {
         <Menu setActive={setActive}>
         <div className="flex items-center sm:items-start w-full lg:px-[150px]">
             <div className="flex-shrink-0">
-                <Image src={Logo} alt="Logo" height={30} className="cursor-pointer" />
+                <Image src={Logo} alt="Logo" height={35} className="cursor-pointer" />
             </div>
-            <div className="flex-grow flex justify-center space-x-6 hidden lg:flex">
+            <div className="flex-grow justify-center space-x-6 hidden lg:flex">
             <div className="flex items-center space-x-6">
                 {menuItems.map((menu, index) => (
                 <MenuItem key={index} setActive={setActive} active={active} item={menu.title}>

@@ -9,15 +9,15 @@ import React from 'react'
 
 const Home = () => {
 return (
-    <div>
+    <>
         {/* <MainNavbar /> */}
         <Hero />
         <Welcome />
         <OurJourney />
         <Business />
-        <Events />
+        {/* <Events /> */}
         {/* <Footer /> */}
-    </div>
+    </>
 )
 }
 

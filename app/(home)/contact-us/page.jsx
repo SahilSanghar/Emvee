@@ -2,6 +2,16 @@
 
 import React, { useState } from 'react';
 import { toast, Toaster } from 'react-hot-toast';
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -12,6 +22,7 @@ const ContactUs = () => {
     });
 
     const [errors, setErrors] = useState({});
+    const [position, setPosition] = useState("bottom"); // Dropdown position state
 
     const validate = () => {
         let tempErrors = {};
@@ -93,6 +104,22 @@ const ContactUs = () => {
                     />
                     {errors.number && <span className="text-red-500 text-sm">{errors.number}</span>}
                 </div>
+
+                {/* DropdownMenuRadioGroupDemo inserted here */}
+                <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                        <Button variant="outline" className="w-full">Choose Services</Button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="w-56">
+                        <DropdownMenuLabel>Choose service</DropdownMenuLabel>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
+                            <DropdownMenuRadioItem value="Parking">Parking</DropdownMenuRadioItem>
+                            <DropdownMenuRadioItem value="Pharmaceutical-machine">Pharmaceutical machine</DropdownMenuRadioItem>
+                            <DropdownMenuRadioItem value="Hvac-project-contracting">Hvac project contracting</DropdownMenuRadioItem>
+                        </DropdownMenuRadioGroup>
+                    </DropdownMenuContent>
+                </DropdownMenu>
 
                 <div className="mb-4">
                     <label htmlFor="description" className="block text-gray-700 font-bold mb-2">Description</label>

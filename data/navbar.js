@@ -1,5 +1,14 @@
 export const menuItems = [
     {
+        title: "Home",
+        links: [
+            { href: "/parking", text: "Address" },
+            { href: "/fan", text: "Number 1" },
+            { href: "/pharmaceutical", text: "Number 2" },
+            { href: "/Hvac", text: "Email Address" },
+        ],
+    },
+    {
         title: "About Us",
         links: [
             { href: "/parking", text: "Address" },
@@ -12,7 +21,6 @@ export const menuItems = [
         title: "Business",
         links: [
             { href: "/parking", text: "Parking" },
-            { href: "/fan", text: "Fan" },
             { href: "/pharmaceutical", text: "Pharmaceutical machine" },
             { href: "/hvac", text: "Hvac project contracting" },
         ],
@@ -49,6 +57,7 @@ export const menuItems = [
     {
         title: "Office",
         links: [
+            { route: "/location", text: "Surat" },
             { route: "/location", text: "Vatva" },
             { route: "/location", text: "Shahibaug" },
         ],

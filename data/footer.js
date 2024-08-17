@@ -25,24 +25,17 @@ export const quickLinks = [
     },
 ];
 
-export const otherLinks = [
-    { text: 'Nextgen' },
-    { text: 'Techvizor' },
-    { text: 'Developers' },
-    { text: 'Entertainment' },
-    { text: 'Foundation' },
-];
-
 export const contactDetails = [
-    { 
-        icon: FaLocationDot, 
-        text: 'pushpavrund industrial hub, nr. Hathijan Circle, Vatva, Ahmedabad, Gujarat 382425' 
-    },
     { 
         icon: BiSolidPhoneCall, 
         text: '09510520896'
     },
     { 
         icon: IoMdMail, 
-        text: 'sales@emvee.co.in' },
+        text: 'sales@emvee.co.in' 
+    },
+    { 
+        icon: FaLocationDot, 
+        text: 'B-221/ 222, Advance Business Park, Opp.Swaminarayan Mandir, Shahibaug, Ahmedabad-380004' 
+    },
 ];
