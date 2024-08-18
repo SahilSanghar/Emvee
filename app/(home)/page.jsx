@@ -15,7 +15,7 @@ return (
         <Welcome />
         <OurJourney />
         <Business />
-        {/* <Events /> */}
+        <Events />
         <Footer />
     </>
 )

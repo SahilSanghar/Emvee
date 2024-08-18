@@ -1,0 +1,58 @@
+const cardsData = [
+    {
+        id: 1,
+        icon: "/Machine/e-35.png",
+        title: "E-35",
+        description: "Semiautomatic Tube-Filling Running capacity 45 max tubes/min.",
+        src: "/Machine/e-35.png",
+        shortInfo: "A COMPACT TUBEFILLLING CAPABLE TO MEET ANY NEEDS DESPITE IT'S SMALL SIZE IT HAS PROVED TO SATISFY PRODUCTION EXPECTATIONS INCLUDING DEMANDING ONES. SUITABLE FOR BOTH STANDARD PRODUCTION AND LABORATORY USE, IT IS NOW AVAILABLE COMPLETE WITH AUTOMATIC TUBE PRINT REGISTRATION DEVICE.",
+        detailInfo: "Detailed information about card 1...",
+    },
+    {
+        id: 2,
+        icon: "/Machine/e-45.png",
+        title: "E-45",
+        description: "Automatic Tube-Filler.",
+        src: "/Machine/e-45.png",
+        shortInfo: "Short info for card 2.",
+        detailInfo: "Detailed information about card 2...",
+    },
+    {
+        id: 3,
+        icon: "/Machine/e-80.png",
+        title: "E-80",
+        description: "Automatic Tube-Filling Running capacity 80 max tubes/min.",
+        src: "/Machine/e-80.png",
+        shortInfo: "Short info for card 3.",
+        detailInfo: "Detailed information about card 3...",
+    },
+    {
+        id: 4,
+        icon: "/Machine/e-150.png",
+        title: "E-150",
+        description: "Double Nozzle Automatic Tube-Filling Running capacity 150 max tubes/min.",
+        src: "/Machine/e-150.png",
+        shortInfo: "Short info for card 4.",
+        detailInfo: "Detailed information about card 4...",
+    },
+    {
+        id: 5,
+        icon: "/Machine/e-320.png",
+        title: "E-320",
+        description: "Four Nozzle Automatic Tube-Filling Running capacity 320 max tubes/min.",
+        src: "/Machine/e-320.png",
+        shortInfo: "Short info for card 5.",
+        detailInfo: "Detailed information about card 5...",
+    },
+    {
+        id: 6,
+        icon: "/Machine/e-480.png",
+        title: "E-480",
+        description: "Six Nozzle Automatic Tube-Filling Running capacity 480 max tubes/min.",
+        src: "/Machine/e-480.png",
+        shortInfo: "Short info for card 6.",
+        detailInfo: "Detailed information about card 6...",
+    },
+];
+
+export default cardsData;

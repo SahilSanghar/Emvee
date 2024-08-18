@@ -108,7 +108,7 @@ return (
     <div className='sm:px-[20px]'>
         <ul className='w-[320px]'>
         <span className='text-2xl font-semibold'>Contact Details</span>
-        <hr className='w-20 mt-1 border-2 border-[rgb(0,112,243)] rounded-3xl' />
+        <hr className='w-20 mt-1 mb-2 border-2 border-[rgb(0,112,243)] rounded-3xl' />
         {contactDetails.map((contact, index) => (
             <li key={index} className='text-lg w-[320px] font-light py-1'>
                 <p className='flex items-center max-sm:w-[250px]'>

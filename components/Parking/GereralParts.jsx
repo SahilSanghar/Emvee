@@ -6,11 +6,11 @@ const GereralParts = () => {
 return (
     <div className='h-[100vh]'>
         <div className="flex mt-5 py-10">
-            <p className='text-orange-500 font-extralight px-10'>______________________________</p>
+            <p className='text-orange-500 font-extralight px-10'>___________________________________</p>
             <p className='py-3.5 text-3xl'>
                 General Parts
             </p>
-            <p className='text-orange-500 font-extralight px-10'>______________________________</p>
+            <p className='text-orange-500 font-extralight px-10'>__________________________________</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full py-10 px-32">
             {/* Left column (2/3 of the width) */}

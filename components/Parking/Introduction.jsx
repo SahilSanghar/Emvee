@@ -6,7 +6,7 @@ const Introduction = () => {
 return (
     <div className='overflow-hidden mt-28'>
         <div className="flex">
-            <p className='text-orange-500 font-extralight px-10'>______________________________</p>
+            <p className='text-orange-500 font-extralight px-10'>_________________________________</p>
             <p className='py-3.5 text-3xl'>
                 Park-Easy 9527 / 9523
             </p>

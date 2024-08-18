@@ -5,11 +5,11 @@ const Specification = () => {
 return (
     <div>
         <div className="flex mt-5 py-10">
-            <p className='text-orange-500 font-extralight px-10'>______________________________</p>
+            <p className='text-orange-500 font-extralight px-10'>___________________________________</p>
             <p className='py-3.5 text-3xl'>
                 Specifications
             </p>
-            <p className='text-orange-500 font-extralight px-10'>______________________________</p>
+            <p className='text-orange-500 font-extralight px-10'>__________________________________</p>
         </div>
         {/* General */}
         <div className="border-b-2 border-gray-400 mb-4 mx-[128px]">
@@ -150,7 +150,7 @@ return (
                 Hydraulic
             </p>
         </div>
-        <div className="grid grid-cols-3 gap-2 px-32 text-xl">
+        <div className="grid grid-cols-3 gap-2 px-32 text-xl pb-20">
             {/* First Div */}
             <div className="col-span-1">
                 <ul className='text-center text-lg'>
