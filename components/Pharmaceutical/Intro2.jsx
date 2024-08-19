@@ -1,11 +1,12 @@
-"use client";
-import React, { useState, useEffect, useCallback } from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { IoClose } from "react-icons/io5";
-import { TubeFilling } from '../../data/Pharmaceutical'; // Correct import
+"use client"
+import React, { useState, useEffect, useCallback } from 'react';
+import Image from 'next/image';
+import { IoClose } from 'react-icons/io5';
+import { Cartoning } from '../../data/Pharmaceutical'; // Ensure this path is correct
+import { motion } from 'framer-motion';
+import { IoIosArrowForward } from 'react-icons/io';
 
-const Machine = () => {
+const Intro2 = () => {
     const [activePopover, setActivePopover] = useState(null);
     const [imageWidth, setImageWidth] = useState(400);
 
@@ -85,9 +86,31 @@ const Machine = () => {
         }
     };
 
+    if (!Array.isArray(Cartoning)) {
+        console.error('Cartoning data is not defined or is not an array');
+        return null;
+    }
+
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 mx-[150px] my-[50px] pb-[100px]">
-            {TubeFilling.map(({ id, icon, title, description, src, shortInfo, detailInfo }) => (
+        <>
+        <div className='text-lg text-left mt-10 ms-[0px] px-[100px] flex'>
+            <div className="">
+                <IoIosArrowForward className='w-[150px] h-[200px] text-orange-500 opacity-60 mt-0.5' />
+            </div>
+            <div className="">
+                <p className='text-4xl text-gray-500 py-5 flex'>
+                    <IoIosArrowForward className='text-orange-600 font-extrabold mt-0.5' />
+                    Emveematic Cartoning Machine
+                </p>
+                <p className='pb-10'>
+                The Rotary Tube Filling and Sealing Machine is a highly efficient and versatile piece of equipment used in various industries. It is designed to automatically fill and seal tubes in a continuous rotary motion. With its advanced technology and precision, it ensures accurate filling, reliable sealing, and high production output. This machine is a reliable solution for efficient and streamlined tube packaging processes.
+                <br /><br />
+                We proudly offer four highly capable tube filling and sealing machines known for their efficiency. Our machines have a production range starting from as low as 35 tubes per minute and going up to 150 tubes per minute. These state-of-the-art machines have been carefully designed and built to deliver optimal performance and productivity in tube packaging processes. With our range of top-performing machines, we provide reliable solutions to meet various production needs and ensure efficient operations.
+                </p>
+            </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 mx-[150px] my-[50px] pb-[100px]">
+            {Cartoning.map(({ id, icon, title, description }) => (
                 <motion.div
                     key={id}
                     variants={{
@@ -147,7 +170,7 @@ const Machine = () => {
                                 {window.innerWidth < 640 ? (
                                     <div className="flex flex-col">
                                         <Image
-                                            src={src}
+                                            src={icon}
                                             width={1500}
                                             height={20}
                                             objectFit="cover"
@@ -161,15 +184,14 @@ const Machine = () => {
                                             >
                                                 <IoClose size={24} />
                                             </button>
-                                            <p className="text-sm text-gray-700 dark:text-gray-300">{shortInfo}</p>
-                                            <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">{detailInfo}</p>
+                                            <p className="text-sm text-gray-700 dark:text-gray-300">{description}</p>
                                         </div>
                                     </div>
                                 ) : (
                                     <div className="bg-gray-200 rounded-xl relative grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div className="flex items-center justify-center">
                                             <Image
-                                                src={src}
+                                                src={icon}
                                                 width={imageWidth}
                                                 height={72}
                                                 objectFit="cover"
@@ -184,8 +206,7 @@ const Machine = () => {
                                             >
                                                 <IoClose size={24} />
                                             </button>
-                                            <p className="text-sm text-left text-gray-700 dark:text-gray-300">{shortInfo}</p>
-                                            {/* <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">{detailInfo}</p> */}
+                                            <p className="text-sm text-left text-gray-700 dark:text-gray-300">{description}</p>
                                         </div>
                                     </div>
                                 )}
@@ -195,7 +216,8 @@ const Machine = () => {
                 </motion.div>
             ))}
         </div>
+        </>
     );
 };
 
-export default Machine;
+export default Intro2;
