@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { toast, Toaster } from 'react-hot-toast';
-import { Button } from "@/components/ui/button";
+import { Button } from "/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,7 +11,7 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "/components/ui/dropdown-menu";
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
