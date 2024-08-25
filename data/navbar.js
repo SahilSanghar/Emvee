@@ -2,7 +2,8 @@ export const menuItems = [
     {
         title: "Business",
         links: [
-            { href: "/parking", text: "Parking" },
+            { href: "/parking", text: "Hydraulic Parking" },
+            { href: "/fan", text: "Mechanical Fan" },
             { href: "/pharmaceutical", text: "Pharmaceutical machine" },
             { href: "/hvac", text: "Hvac project contracting" },
         ],

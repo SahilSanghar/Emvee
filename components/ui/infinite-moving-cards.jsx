@@ -86,7 +86,7 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <div className="flex flex-col items-center">
-              <Image src={item.image} alt={item.name} width={20} height={20} className="w-full h-auto rounded-xl mb-4" />
+              <Image src={item.image} alt={item.name} width={20} height={20} className="w-[150px] h-auto rounded-xl mb-4" />
               <span className="text-sm leading-[1.6] text-gray-700 font-normal">
                 {item.name}
               </span>

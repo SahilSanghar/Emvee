@@ -30,7 +30,7 @@ const OurJourney = () => {
   }, []);
 
   return (
-    <section id="our-journey" className="py-16 bg-gray-100 relative h-[160vh]">
+    <section id="our-journey" className="py-16 px-[250px] bg-gray-100 relative h-[140vh]">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Our Journey</h2>
         <div className="relative">
