@@ -1,66 +1,110 @@
 "use client"
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { milestones } from '../data/journey';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const OurJourney = () => {
-  const milestonesRef = useRef([]);
-
-  useEffect(() => {
-    const timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: '#our-journey',
-        start: 'top 80%',
-        end: 'bottom 20%',
-        scrub: true,
-      },
-    });
-
-    milestonesRef.current.forEach((el, index) => {
-      timeline.fromTo(
-        el,
-        { autoAlpha: 0, y: 50 },
-        { autoAlpha: 1, y: 0, duration: 1 },
-        index * 0.2
-      );
-    });
-  }, []);
 
   return (
     <section id="our-journey" className="py-16 px-[250px] bg-gray-100 relative h-[140vh]">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Journey</h2>
-        <div className="relative">
-          {/* Tracing Beam */}
-          <div className="absolute inset-y-0 left-1/2 w-1 bg-blue-500 transform -translate-x-1/2"></div>
-          {milestones.map((milestone, index) => (
-            <div
-              key={index}
-              ref={(el) => (milestonesRef.current[index] = el)}
-              className={`flex flex-col items-center w-full absolute ${
-                index % 2 === 0 ? 'left-0 md:flex-row md:items-start' : 'right-0 md:flex-row-reverse md:items-start'
-              } opacity-0`}
-              style={{ top: `${index * 150}px` }}
-            >
-              <div className="mb-4 md:mb-0 md:mr-8 md:ml-8 flex flex-col items-center">
-                <div className="bg-blue-500 text-white w-12 h-12 flex items-center justify-center rounded-full mb-2">
-                  {milestone.year}
-                </div>
-                {index < milestones.length - 1 && (
-                  <div className="h-8 md:h-full w-1 bg-blue-500"></div>
-                )}
+      <p className='text-5xl text-center'>
+        Our Journey
+      </p>
+        <div class="container mt-[120px]">
+          <div
+            class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"
+          >
+            <div class="flex flex-row-reverse md:contents">
+              <div
+                class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+              >
+                <h3 class="font-semibold text-lg mb-1">2010</h3>
+                <p class="leading-tight text-justify">
+                  Founded the Company
+                </p>
               </div>
-              <div className="max-w-md md:max-w-none p-4 bg-white hover:shadow-lg rounded-lg">
-                <h3 className="font-semibold">{milestone.year}</h3>
-                <p>{milestone.description}</p>
+              <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                <div class="h-full w-6 flex items-center justify-center">
+                  <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                </div>
+                <div
+                  class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+                ></div>
               </div>
             </div>
-          ))}
+            <div class="flex md:contents">
+              <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                <div class="h-full w-6 flex items-center justify-center">
+                  <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                </div>
+                <div
+                  class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+                ></div>
+              </div>
+              <div
+                class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
+              >
+                <h3 class="font-semibold text-lg mb-1">2012</h3>
+                <p class="leading-tight text-justify">
+                  SMC starting year.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-row-reverse md:contents">
+              <div
+                class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+              >
+                <h3 class="font-semibold text-lg mb-1">2015</h3>
+                <p class="leading-tight text-justify">
+                  Surat branch opening.
+                </p>
+              </div>
+              <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                <div class="h-full w-6 flex items-center justify-center">
+                  <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                </div>
+                <div
+                  class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+                ></div>
+              </div>
+            </div>
+            <div class="flex md:contents">
+              <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                <div class="h-full w-6 flex items-center justify-center">
+                  <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                </div>
+                <div
+                  class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+                ></div>
+              </div>
+              <div
+                class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
+              >
+                <h3 class="font-semibold text-lg mb-1">2020</h3>
+                <p class="leading-tight text-justify">
+                  Machine sales opening.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-row-reverse md:contents">
+              <div
+                class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+              >
+                <h3 class="font-semibold text-lg mb-1">2018</h3>
+                <p class="leading-tight text-justify">
+                  Manufacturing plant opening.
+                </p>
+              </div>
+              <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                <div class="h-full w-6 flex items-center justify-center">
+                  <div class="h-[70px] w-1 absolute top-0 bg-blue-800 pointer-events-none"></div>
+                </div>
+                <div
+                  class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+                ></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
     </section>
   );
 };
