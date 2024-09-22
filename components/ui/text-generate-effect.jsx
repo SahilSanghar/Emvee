@@ -50,7 +50,7 @@ const renderWords = () => {
 return (
 <div className={cn(className)}>
     <div className="mt-4">
-        <div className="text-2xl leading-snug tracking-wide">
+        <div className="text-5xl leading-snug tracking-wide">
             {renderWords()}
         </div>
     </div>

@@ -47,6 +47,18 @@ function Navbar({ className }) {
                             <HoveredLink href="/about-us" onClick={() => handleNavigation("/about-us")} className="cursor-pointer">
                                 About Us
                             </HoveredLink>
+                            <HoveredLink href="/parking" onClick={() => handleNavigation("/parking")} className="cursor-pointer">
+                                Parking
+                            </HoveredLink>
+                            <HoveredLink href="/fan" onClick={() => handleNavigation("/fan")} className="cursor-pointer">
+                                Fan
+                            </HoveredLink>
+                            <HoveredLink href="/pharmaceutical" onClick={() => handleNavigation("/pharmaceutical")} className="cursor-pointer">
+                                Pharmaceutical
+                            </HoveredLink>
+                            <HoveredLink href="/hvac" onClick={() => handleNavigation("/hvac")} className="cursor-pointer">
+                                Hvac
+                            </HoveredLink>
                             {/* Existing Menu Items */}
                             {menuItems.map((menu, index) => (
                                 <MenuItem key={index} setActive={setActive} active={active} item={menu.title}>
