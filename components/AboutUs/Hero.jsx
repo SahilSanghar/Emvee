@@ -6,13 +6,14 @@ return (
 <div class="grid grid-cols-2 gap-4 px-[150px]">
     <div class="text-lg text-left p-4">
         <p className='py-5'>
-            The Emvee Engineer is a dynamic and diversified conglomerate with a strong presence in multiple manufacturing industries, including Parking Systems, Fans, Pharmaceutical Machines, and HVAC Project Contracting. Since our establishment in 2011, we have been at the forefront of innovation and excellence, making significant strides in each sector we operate.
+        Emvee Engineers was founded in year 2016 by Founder's Maulik Vyas, a visionary entrepreneur with a passion for Emvee engineering. Starting as a small firm with a handful of employees, we have grown into a leading engineering company with a global presence.                                                                               
+        Emvee Engineers have continued to grow and evolve, embracing new technologies and markets. We have strengthened our commitment to sustainability and social responsibility. Our team has expanded to include top talent from around the world.
         </p>
         <p className='py-5'>
             At the heart of Emvee Engineers is a team that thrives on collaboration and synergy. The company's journey has been marked by a commitment to fostering a work environment that encourages creativity, innovation, and mutual support. The team is a melting pot of diverse talents, bringing together individuals with expertise in mechanical engineering, automation, software development, and customer relations.
         </p>
         <p className='py-5'>
-            For seven years, Emvee Engineers has been a beacon of excellence in the manufacturing of tube filling machines. Our commitment to precision and innovation is evident in our state-of-the-art technology, customized solutions, and unwavering focus on quality assurance. At the core of our services is a customer-centric approach, offering not just machines but lasting partnerships. With a dedication to sustainability and comprehensive support, Emvee Engineers continues to lead the industry, delivering cutting-edge solutions that empower our clients to thrive in a dynamic market.
+            Our contemporary equipment, rigorous quality control processes and perseverance to International Quality Standards allow us to provide outstanding services to each of our valuable and esteemed clients. AIPL understands the dynamics and intricacies of different Industries and has the expertise to provide optimal solutions for industry specific requirements. AIPL has the flexibility to deliver solutions quickly and cost-effectively and our confidence in our ability to think ahead makes us willing to be measured against any business outcomes.
         </p>
     </div>
     <div class="p-10">
