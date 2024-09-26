@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -14,7 +14,18 @@ L.Icon.Default.mergeOptions({
 });
 
 const LocationMap = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // Set `isClient` to true after the component has mounted
+    setIsClient(true);
+  }, []);
+
   const position = [23.0483, 72.6028]; // Coordinates for B-221-222, Advance Business Park, Shahibag, Ahmedabad
+
+  if (!isClient) {
+    return null; // Render nothing on the server-side
+  }
 
   return (
     <div className="h-[500px] w-full">

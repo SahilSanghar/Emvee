@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -14,7 +14,17 @@ L.Icon.Default.mergeOptions({
 });
 
 const LocationMap = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Only set true after the component has mounted
+  }, []);
+
   const position = [22.9764, 72.6369]; // Coordinates for Vatva, Ahmedabad
+
+  if (!isClient) {
+    return null; // Don't render the map on the server-side
+  }
 
   return (
     <div className="h-[500px] w-full">
