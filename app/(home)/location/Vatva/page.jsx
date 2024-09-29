@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import LocationMap from './LoctionMap'; // Import the LocationMap component
+import LocationMap from './LocationMap'; // Corrected the import
 
 const Vatva = () => {
   return (

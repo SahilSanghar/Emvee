@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import dynamic from 'next/dynamic';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -26,6 +26,12 @@ const LocationMap = () => {
   if (!isClient) {
     return null; // Render nothing on the server-side
   }
+
+  // Dynamically import the react-leaflet components
+  const MapContainer = dynamic(() => import('react-leaflet').then((mod) => mod.MapContainer), { ssr: false });
+  const TileLayer = dynamic(() => import('react-leaflet').then((mod) => mod.TileLayer), { ssr: false });
+  const Marker = dynamic(() => import('react-leaflet').then((mod) => mod.Marker), { ssr: false });
+  const Popup = dynamic(() => import('react-leaflet').then((mod) => mod.Popup), { ssr: false });
 
   return (
     <div className="h-[500px] w-full">

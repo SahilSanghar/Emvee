@@ -1,6 +1,9 @@
 "use client";
 import React from 'react';
-import LocationMap from './LocationMap'; // Import the LocationMap component
+import dynamic from 'next/dynamic';
+
+// Dynamically import the LocationMap component with no SSR
+const LocationMap = dynamic(() => import('./LocationMap'), { ssr: false });
 
 const Shahibaug = () => {
   return (
