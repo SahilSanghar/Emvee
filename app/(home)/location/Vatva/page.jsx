@@ -1,6 +1,11 @@
 "use client";
 import React from 'react';
-import LocationMap from './LocationMap'; // Corrected the import
+import dynamic from 'next/dynamic'; // Import the dynamic function
+
+// Import the LocationMap component dynamically
+const LocationMap = dynamic(() => import('./LocationMap'), {
+  ssr: false, // Disable server-side rendering for this component
+});
 
 const Vatva = () => {
   return (
