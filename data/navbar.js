@@ -40,7 +40,7 @@ export const menuItems = [
     {
         title: "Office",
         links: [
-            { route: "/location", text: "Surat" },
+            { route: "/location/Surat", text: "Surat" },
             { route: "/location/Vatva", text: "Vatva" },
             { route: "/location/Shahibaug", text: "Shahibaug" },
         ],
