@@ -10,12 +10,12 @@ export const businessData = [
         route: "fan"
     },
     {
-        title: "Pharmaceutical manufaturing",
+        title: "Pharmaceutical Manufaturing",
         backgroundImage: "/pharmaceuticalCard.jpg",
         route: "pharmaceutical"
     },
     {
-        title: "Hvac manufaturing",
+        title: "HVAC Manufaturing",
         backgroundImage: "/havcCard.jpg",
         route: "hvac"
     },

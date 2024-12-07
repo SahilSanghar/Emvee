@@ -33,7 +33,7 @@ function Navbar({ className }) {
                         <Image
                             src={Logo}
                             alt="Logo"
-                            height={35}
+                            height={38}
                             className="cursor-pointer"
                             onClick={() => handleNavigation("/")}
                         />
@@ -48,16 +48,16 @@ function Navbar({ className }) {
                                 About Us
                             </HoveredLink>
                             <HoveredLink href="/parking" onClick={() => handleNavigation("/parking")} className="cursor-pointer">
-                                Parking
+                                Hydraulic Parking
                             </HoveredLink>
                             <HoveredLink href="/fan" onClick={() => handleNavigation("/fan")} className="cursor-pointer">
-                                Fan
+                                Mechanical Fan
                             </HoveredLink>
                             <HoveredLink href="/pharmaceutical" onClick={() => handleNavigation("/pharmaceutical")} className="cursor-pointer">
                                 Pharmaceutical
                             </HoveredLink>
                             <HoveredLink href="/hvac" onClick={() => handleNavigation("/hvac")} className="cursor-pointer">
-                                Hvac
+                                HVAC
                             </HoveredLink>
                             {/* Existing Menu Items */}
                             {menuItems.map((menu, index) => (

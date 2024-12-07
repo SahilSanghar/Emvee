@@ -7,10 +7,10 @@ return (
       {/* Left column with vertically aligned p tags */}
     <div className="flex flex-col space-y-4">
         <p className='pb-10'>Misson & Vision</p>
-        <p className="text-lg text-left">Our vision is to be the global leader in the manufacture of environment friendly HVAC Pre-Insulated Panels products and we aim to achieve this goal by:</p>
+        <p className="text-lg text-left">Our vision is to be the global leader in the manufacture of environment friendly Hydraulic Car Parking, Mechanical Fans, Tube Filling Machine and HVAC products and we aim to achieve this goal by:</p>
         <ul className="text-lg list-disc text-left pl-5">
             <li className="">
-                Creating custimer loyalty by offering quality products at competitive prices and prompt after sales services.
+                Creating customer loyalty by offering quality products at competitive prices and prompt after sales services.
             </li>
             <li className="">
                 Achieving total customer satisfaction by exceeding the expectations of our valuable customers.

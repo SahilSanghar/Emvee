@@ -32,7 +32,7 @@ export const contactDetails = [
     },
     { 
         icon: IoMdMail, 
-        text: 'sales@emvee.co.in' 
+        text: 'sales@emvee.co' 
     },
     { 
         icon: FaLocationDot, 

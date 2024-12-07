@@ -37,7 +37,7 @@ const Welcome = () => {
                     transition={{ delay: 1 }}
                     className="font-medium text-3xl py-5 text-white"
                 >
-                    <span className="font-bold text-orange-600">Emvee Engineer</span>
+                    <span className="font-bold text-orange-600">Emvee Corporation</span>
                 </motion.p>
                 <motion.hr
                     initial={{ opacity: 0 }}
@@ -52,8 +52,8 @@ const Welcome = () => {
                     className="font-medium py-5 text-white"
                 >
                     Emvee Engineer is a diversified conglomerate with roots in more than 4
-                    manufacturing industries, like <br />
-                    Parking, Fan, Pharmaceutical machines, and Hvac project contracting.
+                    manufacturing industries like <br />
+                    Parking, Fan, Pharmaceutical Machines, Hydraulic Car Parking and HVAC project contracting.
                 </motion.p>
                 <motion.p
                     initial={{ opacity: 0 }}
@@ -61,7 +61,7 @@ const Welcome = () => {
                     transition={{ delay: 2.5 }}
                     className="py-4 text-white"
                 >
-                    Since its establishment in 2011, Emvee Engineer has spanned the spectrum
+                    Since its establishment in 2016, Emvee Corporation has spanned the spectrum
                     of success in multiple industries with <br />
                     eminent business ventures!
                 </motion.p>

@@ -56,7 +56,7 @@ return (
     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-sm:px-[80px] sm:px-[120px] lg:px-[200px] py-14 h-auto lg:h-[100vh] xl:h-[70vh] bg-[#212529] text-white">
         <div className='py-5'>
             <Image src='/icon.png' alt='logo' width={80} height={50} />
-            <p className='py-5'>Established in 2011, The Emvee Engineer envisions to create an empire that spans across various industries and meet the impeccable quality standards...</p>
+            <p className='py-5'>Established in 2016, The Emvee Engineer envisions to create an empire that spans across various industries and meet the impeccable quality standards...</p>
             <a href="#" className='flex items-center'>Learn More <FaArrowRightLong className='ml-2 text-[rgb(0,112,243)]' /></a>
             <div className='flex py-4'>
                 <a

@@ -16,13 +16,13 @@ return (
     </div>
     <div className='text-lg text-left pt-10 sm:pl-[50px] max-sm:px-20'>
         <p className='py-2 font-bold text-2xl'>
-            Emvee Engineer Pvt Ltd
+            Emvee Corporation Pvt Ltd
         </p>
         <p className='py-2 pt-10'>
             <span className='font-semibold'>Contact Number: </span>&nbsp;09510520896
         </p>
         <p className='py-2'>
-            <span className='font-semibold'>Email: </span>&nbsp;sales@emvee.co.in
+            <span className='font-semibold'>Email: </span>&nbsp;sales@emvee.co
         </p>
         <p className='py-2'>
             <span className='font-semibold'>Address: </span>&nbsp;221, The Grand Plaza, <br />
