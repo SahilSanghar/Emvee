@@ -3,9 +3,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { IoClose } from "react-icons/io5";
-import { TubeFilling } from '../../data/Pharmaceutical'; // Correct import
 
-const Machine = () => {
+const Machine = ({ data }) => {
     const [activePopover, setActivePopover] = useState(null);
     const [imageWidth, setImageWidth] = useState(400);
 
@@ -87,7 +86,7 @@ const Machine = () => {
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 mx-[150px] my-[50px] pb-[100px]">
-            {TubeFilling.map(({ id, icon, title, description, src, shortInfo, detailInfo }) => (
+            {data.map(({ id, icon, title, description, src, shortInfo, detailInfo }) => (
                 <motion.div
                     key={id}
                     variants={{

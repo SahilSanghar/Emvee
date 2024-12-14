@@ -156,7 +156,10 @@ return (
                 Design of impulse systems is usually proven by use of CFD (Computational Fluid Dynamic) analysis. This allows detailed computation of airflow in car parks, taking in to account the often complex geometry of individual buildings. This is often essential to demonstrate to the local authority that designs and sizing of fan is done satisfactorily. CFD modelling has the objective of confirming the viability of the ventilation scheme. Emvee offers CFD modelling of the system and a full technical report for local authority approval prior to installation. Since CFD is a key component of car park ventilation design, and there has been inadequate guidance on this element. We have complete in house facility of CFD which makes it easier for us to validate our designs and for building bodies to sanction them.
             </p>
         </div>
-        <Image src='/Fan/cfd2.jpg' alt='Car Parking' width={1000} height={800} objectFit='cover' className='w-[800px] mx-auto' />
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-20">
+        <Image src='/Fan/cfd3.jpg' alt='Car Parking' width={1000} height={800} objectFit='cover' className='w-[300px] mx-auto' />
+        <Image src='/Fan/cfd4.jpg' alt='Car Parking' width={1000} height={800} objectFit='cover' className='w-[500px] mx-auto' />
+        </div>
         {/* <div className="text-lg text-left">
             <p className="text-xl">JET FANS EXTRACT FANS
             </p>
