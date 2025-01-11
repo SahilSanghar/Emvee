@@ -41,7 +41,7 @@ const FPP = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/Parking/Hero.jpg" // Replace with your image URL
+          src="/Parking/hero.jpg" // Replace with your image URL
           alt="Background Image"
           layout="fill"
           objectFit="cover"
