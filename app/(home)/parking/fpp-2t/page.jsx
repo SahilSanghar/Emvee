@@ -247,7 +247,7 @@ const FPP = () => {
                   <p className="text-xl font-semibold px-[1.6rem] py-2 text-white">Dimensional Drawing</p>
                 </div>
               </div>
-              <Image src='/parking/drawing.png' alt="Drawing" height={100} width={1200} className="w-full" />
+              <Image src='/Parking/drawing.png' alt="Drawing" height={100} width={1200} className="w-full" />
               <div className="relative bg-blue-800 rounded-full h-6 my-10">
                 <div className="bg-blue-400 rounded-full w-64 h-11 absolute top-[-0.6rem] left-[50%] transform -translate-x-1/2">
                   <p className="text-xl font-semibold px-[1.6rem] py-2 text-white">Design Showcase</p>
@@ -255,7 +255,7 @@ const FPP = () => {
               </div>
               <div className="relative w-full h-96">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/parking/s1.jpg")' }}></div>
+      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/Parking/s1.jpg")' }}></div>
 
       {/* Overlay Text */}
       <div className="relative z-10 px-5 py-5 flex flex-col justify-center items-center w-full h-[90%] text-2xl font-semibold">
@@ -266,15 +266,15 @@ const FPP = () => {
               <div className="bg-black text-center text-white">
                 <p className="relative top-20 text-xl">Auto lock release system</p>
                 <p className="relative top-20 text-sm">The safety locks can be released automatically when the user operate to make the platform down</p>
-                <Image src='/parking/s2.jpg' alt="S 2" height={100} width={1200} />
+                <Image src='/Parking/s2.jpg' alt="S 2" height={100} width={1200} />
               </div>
               <div className="bg-black text-white text-center h-[80vh]">
                 <p className="text-xl  bg-black">Gentle metallic touch, excellent surface finishing
                 </p>
                 <p className="text-sm bg-black pb-14">After applying AkzoNobel powder, color saturation, weather resistance and <br /> its adhesion are significantly enhanced
                 </p>
-                <Image src='/parking/s3.jpg' alt="s 3" height={500} width={1200} className="" />
-                <Image src='/parking/s4.jpg' alt="s 4" width={1200} height={100} />
+                <Image src='/Parking/s3.jpg' alt="s 3" height={500} width={1200} className="" />
+                <Image src='/Parking/s4.jpg' alt="s 4" width={1200} height={100} />
                 <div className="relative -top-[88rem] right-[18rem] text-black">
                   <p className="">Dynamic locking device
                   </p>
@@ -292,7 +292,7 @@ const FPP = () => {
               <div className="text-center -mt-32 py-10 text-black h-[40vh]">
                 <p className="text-xl">Laser cutting + Robotic welding</p>
                 <p className="text-sm">Accurate laser cutting improves the accuracy of the parts, and <br />automated robotic welding makes the weld joints more firm and beautiful</p>
-                <Image src='/parking/s6.jpg' alt="S 2" height={100} width={1200} />
+                <Image src='/Parking/s6.jpg' alt="S 2" height={100} width={1200} />
               </div>
               </div>
               <div className="relative bg-blue-800 rounded-full h-6 my-10 mt-[185rem]">
@@ -301,12 +301,12 @@ const FPP = () => {
                 </div>
               </div>
               <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
-                <Image src='/parking/pr1.jpg' alt="pr1" width={700} height={200} />
-                <Image src='/parking/pr2.jpg' alt="pr2" width={700} height={200} />
-                <Image src='/parking/pr3.jpg' alt="pr3" width={700} height={200} />
-                <Image src='/parking/pr4.jpg' alt="pr4" width={700} height={200} />
+                <Image src='/Parking/pr1.jpg' alt="pr1" width={700} height={200} />
+                <Image src='/Parking/pr2.jpg' alt="pr2" width={700} height={200} />
+                <Image src='/Parking/pr3.jpg' alt="pr3" width={700} height={200} />
+                <Image src='/Parking/pr4.jpg' alt="pr4" width={700} height={200} />
               </div>
-              <Image src='/parking/pr5.jpg' alt="pr5" width={1250} height={200} className="mt-5" />
+              <Image src='/Parking/pr5.jpg' alt="pr5" width={1250} height={200} className="mt-5" />
               <button className="bg-gray-300 hover:bg-orange-600 text-white px-5 py-3 rounded-full border-2 border-double outline-2 outline-double outline-black mx-[39%] my-7 transition duration-500 ease-in-out">Download Product Datasheet</button>
             </div>
           )}
