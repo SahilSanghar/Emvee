@@ -12,11 +12,11 @@ export function Business() {
     };
 
     return (
-        <>
-        <p className="text-center text-5xl pt-[50px]">
+        <div className="bg-[#171717] text-white">
+        <p className="bg-[#171717] text-white text-center text-5xl pt-[50px]">
             Services
         </p>
-        <div className="grid max-sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-[90%] lg:max-w-7xl mx-auto mb-0 pb-10 mt-[50px]">
+        <div className="bg-[#171717] text-white grid max-sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-[90%] lg:max-w-7xl mx-auto mb-0 pb-10 mt-[50px]">
             {businessData.map((item, index) => (
                 <div
                     key={index}
@@ -34,6 +34,6 @@ export function Business() {
                 </div>
             ))}
         </div>
-        </>
+        </div>
     );
 }

@@ -56,11 +56,16 @@ return (
                 <Image src='/Fan/jet2.jpg' alt='Car Parking' width={300} height={100} objectFit='cover' className='' />
             </div>
         </div>
-        <div className="mx-52 text-lg text-left">
-            <p className="font-semibold text-3xl">Centrifugal Jet Fans</p>
-            <p className="">
-                Where natural ventilation is not possible, - such as where the car park is in a basement or fully enclosed, a mechanical extract system should be used. For mechanically ventilated car parks, the basic requirements are that the fan should be capable of operatic 250o for 2 hours and should be provided secondary power supply to operate in the event of a mains power failure. The design of Mechanical Ventilation system has an effect on the entire building design. Think of the shafts for extraction of pollutants and smoke. Emcee's conceptual design will provide you the needed spaces and the locations in order to have a suitable and efficient ventilation system at the end. We strongly advice involving us in the architectural design phase
-            </p>
+        <div className="w-full grid grid-cols-2 gap-0">
+            <div className="col-span-2 grid grid-cols-2 ps-48 pt-20">
+                <div className="text-lg text-left pe-12">
+                    <p className="font-semibold text-3xl">Centrifugal Jet Fans</p>
+                    <p className="">
+                        Where natural ventilation is not possible, - such as where the car park is in a basement or fully enclosed, a mechanical extract system should be used. For mechanically ventilated car parks, the basic requirements are that the fan should be capable of operatic 250o for 2 hours and should be provided secondary power supply to operate in the event of a mains power failure. The design of Mechanical Ventilation system has an effect on the entire building design. Think of the shafts for extraction of pollutants and smoke. Emcee's conceptual design will provide you the needed spaces and the locations in order to have a suitable and efficient ventilation system at the end. We strongly advice involving us in the architectural design phase
+                    </p>
+                </div>
+                <Image src='/Fan/bathroomfans.jpg' alt='Car Parking' width={400} height={100} objectFit='cover' className='' />
+            </div>
         </div>
         <div className="w-full grid grid-cols-2 gap-0">
             <div className="col-span-2 grid grid-cols-2 ps-48 pt-20">
@@ -72,6 +77,29 @@ return (
                     </p>
                 </div>
             </div>
+        </div>
+        <div className="w-full grid grid-cols-2 gap-0">
+            <div className="col-span-2 grid grid-cols-2 ps-48 pt-20">
+                <div className="text-lg text-left pe-12">
+                    <p className="font-semibold text-3xl">Propeller Fan
+                    </p>
+                    <p className="">
+                    Propeller Fan is a Multi Blade Fan equipped with a CE Certified External Rotor Motor of Class F Insulation, suitable for 50Hz Applications. A Variety of Motors with 4 and 6 Poles are available in different Fan Diameters. Standard Power Supply is Single Phase; however some models are only suitable for 3Ph Power Supply only (Refer to the data sheet for more details). The fan motor is suitable for 220V±6%/50Hz electric supply for single phase models and 415V±6%/50Hz electric supply for three phase models. The Aesthetically pleasing fan is mounted on a Strong Steel Sheet with an accurately formed Orifice Ring. The Fan is protected with a Safety Wire Guard at the Air Inlet Side. The Entire Assembly is Painted in Black Colour. All Electrical Connections are housed within a Terminal Box and it is Supplied with a Power Cable.
+                    Fans are primarily designed for Air Exhaust; however, they may be used in intake applications as well.
+                    </p>
+                </div>
+                <Image src='/Fan/propeller.jpg' alt='Car Parking' width={400} height={100} objectFit='cover' className='' />
+            </div>
+        </div>
+        <div className="col-span-2 grid grid-cols-2 ps-40 pt-20">
+            <Image src='/Fan/drivecabinet.jpg' alt='Car Parking' width={400} height={100} objectFit='cover' className='' />
+        <div className="text-lg text-left pe-12">
+            <p className="font-semibold text-3xl">Direct Drive Cabinet Fans
+            </p>
+            <p className="">
+                Cabinet Inline fans may be used for Ventilation and Exhaust applications for air volumes ranging from 1000CFM to 6800CFM, powered by a forward-curved, direct driven fan. The standard series has a Single skin Cabinet and the Insulated Series is supplied with high-grade acoustic egg-crate insulation, internally lined, for low noise applications.
+            </p>
+        </div>
         </div>
         <div className="w-full grid grid-cols-2 gap-0">
             <div className="col-span-2 grid grid-cols-2 ps-48 pt-20">
@@ -109,29 +137,6 @@ return (
                     </p>
                 </div>
                 <Image src='/Fan/cabinet.jpg' alt='Car Parking' width={400} height={100} objectFit='cover' className='' />
-            </div>
-        </div>
-        <div className="col-span-2 grid grid-cols-2 ps-40 pt-20">
-            <Image src='/Fan/drivecabinet.jpg' alt='Car Parking' width={400} height={100} objectFit='cover' className='' />
-        <div className="text-lg text-left pe-12">
-            <p className="font-semibold text-3xl">Direct Drive Cabinet Fans
-            </p>
-            <p className="">
-                Cabinet Inline fans may be used for Ventilation and Exhaust applications for air volumes ranging from 1000CFM to 6800CFM, powered by a forward-curved, direct driven fan. The standard series has a Single skin Cabinet and the Insulated Series is supplied with high-grade acoustic egg-crate insulation, internally lined, for low noise applications.
-            </p>
-        </div>
-        </div>
-        <div className="w-full grid grid-cols-2 gap-0">
-            <div className="col-span-2 grid grid-cols-2 ps-48 pt-20">
-                <div className="text-lg text-left pe-12">
-                    <p className="font-semibold text-3xl">Propeller Fan
-                    </p>
-                    <p className="">
-                    Propeller Fan is a Multi Blade Fan equipped with a CE Certified External Rotor Motor of Class F Insulation, suitable for 50Hz Applications. A Variety of Motors with 4 and 6 Poles are available in different Fan Diameters. Standard Power Supply is Single Phase; however some models are only suitable for 3Ph Power Supply only (Refer to the data sheet for more details). The fan motor is suitable for 220V±6%/50Hz electric supply for single phase models and 415V±6%/50Hz electric supply for three phase models. The Aesthetically pleasing fan is mounted on a Strong Steel Sheet with an accurately formed Orifice Ring. The Fan is protected with a Safety Wire Guard at the Air Inlet Side. The Entire Assembly is Painted in Black Colour. All Electrical Connections are housed within a Terminal Box and it is Supplied with a Power Cable.
-                    Fans are primarily designed for Air Exhaust; however, they may be used in intake applications as well.
-                    </p>
-                </div>
-                <Image src='/Fan/propeller.jpg' alt='Car Parking' width={400} height={100} objectFit='cover' className='' />
             </div>
         </div>
         <div className="col-span-2 grid grid-cols-2 ps-40 pt-20">

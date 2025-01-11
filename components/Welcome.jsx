@@ -13,9 +13,9 @@ const Welcome = () => {
     };
 
     return (
-        <div className="relative h-[90vh] flex justify-center items-center text-center sm:px-5" id="about">
+        <div className="relative h-[90vh] flex justify-center items-center text-center sm:px-5 bg-[#171717] text-white" id="about">
             {/* Background Image */}
-            <div className="absolute inset-0 w-100vw h-full -z-10">
+            {/* <div className="absolute inset-0 w-100vw h-full -z-10">
                 <Image
                     src='/welcome.jpg'
                     alt="welcome"
@@ -23,7 +23,7 @@ const Welcome = () => {
                     objectFit="cover"
                     objectPosition="center"
                 />
-            </div>
+            </div> */}
 
             {/* Text and Content Overlay */}
             <div className="z-10">
@@ -40,10 +40,10 @@ const Welcome = () => {
                     <span className="font-bold text-orange-600">Emvee Corporation</span>
                 </motion.p>
                 <motion.hr
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
+                    initial={{ width: 0 }}
+                    animate={{ width: "30%" }}
                     transition={{ delay: 1.5 }}
-                    className="w-10 ml-[50px] -mt-2.5 border-2 border-[rgb(0,112,243)] rounded-xl"
+                    className="ml-[32%] -mt-2.5 border-2 border-[rgb(0,112,243)] rounded-xl"
                 />
                 <motion.p
                     initial={{ opacity: 0 }}

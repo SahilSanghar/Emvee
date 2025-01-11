@@ -1,12 +1,13 @@
 "use client";
-import React, { useState } from "react";
-import { useRouter } from "next/navigation";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
-import { cn } from "/lib/utils";
-import Image from "next/image";
-import Logo from "/public/icon1.png";
-import { menuItems, buttonData } from "../data/navbar";
-import { FaBars, FaTimes } from "react-icons/fa";
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
+import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import { BiCategory } from "react-icons/bi";
+import { HiOutlineOfficeBuilding } from "react-icons/hi";
+import { RiHome5Line } from "react-icons/ri";
+import { MdOutlineContactSupport } from "react-icons/md";
+import { useRouter } from 'next/navigation';
 
 export function MainNavbar() {
     return (
@@ -16,131 +17,127 @@ export function MainNavbar() {
     );
 }
 
-function Navbar({ className }) {
-    const [active, setActive] = useState(null);
+function Navbar() {
+    const [isSticky, setIsSticky] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const router = useRouter();
 
-    const handleNavigation = (route) => {
-        router.push(route);
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
     };
+  
+    const handleNavigation = (path) => {
+      setIsMenuOpen(false);
+      router.push(path);
+    };
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        setIsSticky(window.scrollY > 0);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
 
     return (
-        <div className={cn("fixed w-screen top-10 inset-x-0 max-w-2xl z-50", className)}>
-            <Menu setActive={setActive}>
-                <div className="flex items-center sm:items-start w-full lg:px-[150px]">
-                    <div className="flex-shrink-0">
-                        <Image
-                            src={Logo}
-                            alt="Logo"
-                            height={38}
-                            className="cursor-pointer"
-                            onClick={() => handleNavigation("/")}
-                        />
-                    </div>
-                    <div className="flex-grow justify-center space-x-6 hidden lg:flex">
-                        <div className="flex items-center space-x-6">
-                            {/* Home and About Us buttons */}
-                            <HoveredLink href="/" onClick={() => handleNavigation("/")} className="cursor-pointer">
-                                Home
-                            </HoveredLink>
-                            <HoveredLink href="/about-us" onClick={() => handleNavigation("/about-us")} className="cursor-pointer">
-                                About Us
-                            </HoveredLink>
-                            <HoveredLink href="/parking" onClick={() => handleNavigation("/parking")} className="cursor-pointer">
-                                Hydraulic Parking
-                            </HoveredLink>
-                            <HoveredLink href="/fan" onClick={() => handleNavigation("/fan")} className="cursor-pointer">
-                                Mechanical Fan
-                            </HoveredLink>
-                            <HoveredLink href="/pharmaceutical" onClick={() => handleNavigation("/pharmaceutical")} className="cursor-pointer">
-                                Pharmaceutical
-                            </HoveredLink>
-                            <HoveredLink href="/hvac" onClick={() => handleNavigation("/hvac")} className="cursor-pointer">
-                                HVAC
-                            </HoveredLink>
-                            {/* Existing Menu Items */}
-                            {menuItems.map((menu, index) => (
-                                <MenuItem key={index} setActive={setActive} active={active} item={menu.title}>
-                                    {menu.links ? (
-                                        <div className="flex flex-col space-y-1 text-sm">
-                                            {menu.links.map((link, linkIndex) => (
-                                                <HoveredLink key={linkIndex} href={link.href} route={link.route}>
-                                                    {link.text}
-                                                </HoveredLink>
-                                            ))}
-                                        </div>
-                                    ) : menu.products ? (
-                                        <div className="text-sm grid grid-cols-2 gap-4 p-2">
-                                            {menu.products.map((product, productIndex) => (
-                                                <ProductItem
-                                                    key={productIndex}
-                                                    title={product.title}
-                                                    href={product.href}
-                                                    src={product.src}
-                                                    description={product.description}
-                                                />
-                                            ))}
-                                        </div>
-                                    ) : null}
-                                </MenuItem>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="flex-shrink-0 ml-auto hidden lg:block">
-                        <button className={buttonData.className} onClick={() => handleNavigation("/contact-us")}>
-                            {buttonData.text}
-                        </button>
-                    </div>
-                    <div className="flex lg:hidden ml-auto">
-                        <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                            {isMenuOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
-                        </button>
-                    </div>
-                </div>
-                {isMenuOpen && (
-                    <div className="lg:hidden bg-white shadow-md p-4 absolute top-full right-0 w-full z-40">
-                        <div className="flex flex-col space-y-4">
-                            <div className="flex flex-row flex-wrap space-x-4">
-                                <HoveredLink href="/" onClick={() => handleNavigation("/")} className="cursor-pointer text-md">
-                                    Home
-                                </HoveredLink>
-                                <HoveredLink href="/about-us" onClick={() => handleNavigation("/about-us")} className="cursor-pointer text-md">
-                                    About Us
-                                </HoveredLink>
-                                {menuItems.map((menu, index) => (
-                                    <MenuItem key={index} setActive={setActive} active={active} item={menu.title}>
-                                        {menu.links ? (
-                                            <div className="flex flex-col space-y-1 text-sm">
-                                                {menu.links.map((link, linkIndex) => (
-                                                    <HoveredLink key={linkIndex} href={link.href} route={link.route}>
-                                                        {link.text}
-                                                    </HoveredLink>
-                                                ))}
-                                            </div>
-                                        ) : menu.products ? (
-                                            <div className="text-sm grid grid-cols-2 gap-4 p-2">
-                                                {menu.products.map((product, productIndex) => (
-                                                    <ProductItem
-                                                        key={productIndex}
-                                                        title={product.title}
-                                                        href={product.href}
-                                                        src={product.src}
-                                                        description={product.description}
-                                                    />
-                                                ))}
-                                            </div>
-                                        ) : null}
-                                    </MenuItem>
-                                ))}
-                            </div>
-                            <button className={buttonData.className} onClick={() => handleNavigation("/contact-us")}>
-                                {buttonData.text}
-                            </button>
-                        </div>
-                    </div>
-                )}
-            </Menu>
-        </div>
+        
+    <div
+    className={`fixed top-0 w-full z-30 transition-all duration-300 ${
+      isSticky ? "h-[75px] backdrop-blur-md bg-opacity-70" : "h-[96px]"
+    } bg-black text-white`}
+  >
+    <div className="flex justify-between items-center w-full max-w-screen-xl px-5 md:px-24 py-5">
+      {/* Logo Section */}
+      <div className="flex items-center space-x-1.5 text-3xl">
+        <Link href="/" passHref>
+          <Image
+            src="/icon1.png"
+            alt="Logo"
+            height={380}
+            width={100}
+            className="cursor-pointer"
+          />
+        </Link>
+      </div>
+
+      {/* Desktop Navigation */}
+      <ul className="hidden md:flex relative left-64 text-white items-center space-x-5">
+        <li
+          className="cursor-pointer hover:text-gray-400 transition"
+          onClick={() => handleNavigation('/')}
+        >
+          Home
+        </li>
+        <li
+          className="cursor-pointer hover:text-gray-400 transition"
+          onClick={() => handleNavigation('/about-us')}
+        >
+          About Us
+        </li>
+        <li
+          className="cursor-pointer hover:text-gray-400 transition"
+          onClick={() => handleNavigation('/parking')}
+        >
+          Parking
+        </li>
+        <li
+          className="cursor-pointer hover:text-gray-400 transition"
+          onClick={() => handleNavigation('/contact-us')}
+        >
+          Contact Us
+        </li>
+      </ul>
+
+      {/* Hamburger Menu */}
+      <div className="md:hidden border-[2px] border-[#767676] rounded-full w-11 h-11 p-2.5 cursor-pointer relative z-50">
+        {!isMenuOpen ? (
+          <RxHamburgerMenu className="text-[#767676] h-5 w-5" onClick={toggleMenu} />
+        ) : (
+          <RxCross2 className="text-[#767676] h-5 w-5" onClick={toggleMenu} />
+        )}
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed top-[4.6rem] rounded-es-3xl right-0 max-sm:h-[32vh] max-sm:w-[45%] md:h-full w-3/4 bg-[#0a0a0a] text-white p-5 transform ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        } transition-transform duration-500 z-40`}
+      >
+        <ul className="space-y-5">
+          <li
+            className="text-lg flex items-center gap-1.5 cursor-pointer hover:text-gray-400 transition"
+            onClick={() => handleNavigation('/')}
+          >
+            <RiHome5Line />
+            <span className="">Home</span>
+          </li>
+          <li
+            className="text-lg flex items-center gap-1.5 cursor-pointer hover:text-gray-400 transition"
+            onClick={() => handleNavigation('/about-us')}
+          >
+            <HiOutlineOfficeBuilding />
+            <span className="">About Us</span>
+          </li>
+          <li
+            className="text-lg flex items-center gap-1.5 cursor-pointer hover:text-gray-400 transition"
+            onClick={() => handleNavigation('/categories')}
+          >
+            <BiCategory />
+            <span className="">Categories</span>
+          </li>
+          <li
+            className="text-lg flex items-center gap-1.5 cursor-pointer hover:text-gray-400 transition"
+            onClick={() => handleNavigation('/contact-us')}
+          >
+            <MdOutlineContactSupport />
+            <span className="">Contact Us</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
     );
 }

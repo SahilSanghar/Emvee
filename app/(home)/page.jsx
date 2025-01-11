@@ -2,6 +2,7 @@ import { Business } from '/components/BusinessCard'
 import Events from '/components/Events'
 import Footer from '/components/Footer'
 import Hero from '/components/Hero'
+import CTA from '/components/CTA'
 import { MainNavbar } from '/components/Navbar'
 import OurJourney from '/components/OurJourney'
 import Welcome from '/components/Welcome'
@@ -15,7 +16,8 @@ return (
         <Welcome />
         <OurJourney />
         <Business />
-        <Events />
+        {/* <Events /> */}
+        <CTA />
         <Footer />
     </>
 )
